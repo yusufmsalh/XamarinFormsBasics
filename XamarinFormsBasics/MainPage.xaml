@@ -6,14 +6,16 @@
              mc:Ignorable="d"
              x:Class="XamarinFormsBasics.MainPage">
 
-    <StackLayout>
-        <Entry x:Name="txtName"> 
-            
-        </Entry>
-        <Button Clicked="Button_Clicked" Text="Say Hello">
-            
-        </Button>
-        <Label x:Name="lblName">
+    
+    <!--contiue with part 3,5:28--> 
+    <StackLayout BackgroundColor="White" Padding="60">
+        <Entry x:Name="txtName" BackgroundColor="Gray" />
+
+
+        <Button Clicked="Button_Clicked" Text="Say Hello" BackgroundColor="Green" TextColor="White"/>
+
+
+        <Label x:Name="lblName" FontSize="60" TextColor="Gray">
             
         </Label>
     </StackLayout>
