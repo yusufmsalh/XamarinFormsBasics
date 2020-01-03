@@ -25,5 +25,10 @@ namespace XamarinFormsBasics
             lblName.Text = "Hello " + name;
 
         }
+
+        private async   void btnNavigate_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Page1(txtName.Text));
+        }
     }
 }
