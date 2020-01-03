@@ -19,7 +19,7 @@
  
         <Label x:Name="lblName" FontSize="60" TextColor="Gray"/>
 
-        <Button x:Name="btnNavigate" Text="Navigate to page 2" Clicked="btnNavigate_Clicked"></Button>
+        <!--<Button x:Name="btnNavigate" Text="Navigate to page 2" Clicked="btnNavigate_Clicked"></Button>-->
 
 
     </StackLayout>

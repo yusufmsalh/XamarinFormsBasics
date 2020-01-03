@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinFormsBasics.ListView;
 
 namespace XamarinFormsBasics
 {
@@ -10,22 +11,27 @@ namespace XamarinFormsBasics
         {
             InitializeComponent();
 
+
             //MainPage = new MainPage();
-            //MainPage = new NavigationPage(new MainPage());
-            //MainPage = new TabbedPage
+            //MainPage = new NavigationPage(new MainPage()); // to naviagate from main page 
+            MainPage = new TabbedPage // to make tabbed pages
+            {
+                Children = {
+                    new MainPage(),
+                    new Page1(""),
+                    new ListViewExample()
+                }
+            };
+            //MainPage = new CarouselPage
             //{
             //    Children = {
             //        new MainPage(),
             //        new Page1("")
             //    }
             //};
-            MainPage = new CarouselPage
-            {
-                Children = {
-                    new MainPage(),
-                    new Page1("")
-                }
-            };
+
+
+
         }
 
         protected override void OnStart()
