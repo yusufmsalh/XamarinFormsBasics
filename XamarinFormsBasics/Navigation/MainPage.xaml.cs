@@ -16,6 +16,7 @@ namespace XamarinFormsBasics
         public MainPage()
         {
             InitializeComponent();
+            //contiue video 8
         }
 
         private void Button_Clicked(object sender, EventArgs e)

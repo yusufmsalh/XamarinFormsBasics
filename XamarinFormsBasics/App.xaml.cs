@@ -19,7 +19,9 @@ namespace XamarinFormsBasics
                 Children = {
                     new MainPage(),
                     new Page1(""),
-                    new ListViewExample()
+                    new ListViewExample(),
+                    new ListViewWithItemTemplate()
+
                 }
             };
             //MainPage = new CarouselPage
